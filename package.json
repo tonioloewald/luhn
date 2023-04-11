@@ -1,6 +1,6 @@
 {
   "name": "luhn-tiny",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "very small implementation of luhn checksum algorithm",
   "keywords": [
     "luhn",
