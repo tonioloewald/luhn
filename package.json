@@ -1,0 +1,46 @@
+{
+  "name": "luhn-tiny",
+  "version": "1.0.0",
+  "description": "very small implementation of luhn checksum algorithm",
+  "keywords": [
+    "luhn",
+    "credit-card",
+    "validation",
+    "ecommerce",
+    "IMEI",
+    "checksum"
+  ],
+  "author": "Tonio Loewald",
+  "source": "src/luhn.ts",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "types": "dist/luhn-types.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && npx ts-standard src/*.ts --fix && bun wiptest && npx parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tonioloewald/luhn.git"
+  },
+  "devDependencies": {
+    "@parcel/packager-ts": "^2.8.3",
+    "@parcel/transformer-typescript-types": "^2.8.3",
+    "parcel": "latest",
+    "ts-standard": "latest",
+    "typescript": "^5.0.4"
+  },
+  "targets": {
+    "default": {
+      "distDir": "dist",
+      "isLibrary": true,
+      "outputFormat": "esmodule"
+    },
+    "cdn": {
+      "isLibrary": true,
+      "outputFormat": "esmodule",
+      "optimize": true,
+      "distDir": "cdn"
+    }
+  }
+}
