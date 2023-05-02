@@ -6,6 +6,8 @@ such as a phone's IMEI) is correct.
 
 Usage:
 
+    import {luhn} from 'luhn-tiny'
+
     luhn('4111 1111 1111 1111')   // returns true
     luhn('4111-1111-1111-1112')   // returns true
     luhn(4111111111111)           // returns true
