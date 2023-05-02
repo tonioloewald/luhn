@@ -9,7 +9,7 @@ Usage:
     import {luhn} from 'luhn-tiny'
 
     luhn('4111 1111 1111 1111')   // returns true
-    luhn('4111-1111-1111-1112')   // returns true
+    luhn('4111-1111-1111-1112')   // returns false
     luhn(4111111111111)           // returns true
     luhn(4111111111112)           // returns false
 
