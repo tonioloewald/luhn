@@ -1,6 +1,6 @@
 export const luhn = (cc: string | number): boolean => {
   // simple regex will pull all the numbers out
-  // reverse the digits to simplify positional operation "counting from the backl"
+  // reverse the digits to simplify "counting from the back"
   const digits = String(cc).match(/\d/g)?.map(d => Number(d)).reverse()
   return digits != null
     ? digits
